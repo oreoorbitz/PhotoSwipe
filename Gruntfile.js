@@ -256,7 +256,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['sass', 'autoprefixer', 'pswpbuild','uglify', 'copy', 'jekyll:dev']);
 
   grunt.registerTask('production', ['sass', 'autoprefixer', 'pswpbuild', 'uglify', 'copy', 'cssmin', 'jekyll:production']);
-  grunt.registerTask('nosite', ['sass', 'autoprefixer', 'pswpbuild', 'uglify']);
+  grunt.registerTask('nosite', ['pswpbuild']);
   grunt.registerTask('hint', ['jshint']);
 
 };
