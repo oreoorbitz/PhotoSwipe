@@ -893,7 +893,6 @@ var publicMethods = {
 			_isFixedPosition = false;
 		}
 		
-		template.setAttribute('aria-hidden', 'false');
 		if(_options.modal) {
 			if(!_isFixedPosition) {
 				template.style.position = 'absolute';
@@ -1000,7 +999,6 @@ var publicMethods = {
 		if(_showOrHideTimeout) {
 			clearTimeout(_showOrHideTimeout);
 		}
-		console.log('test0r')
 		template.className = _initalClassName;
 
 		if(_updateSizeInterval) {
