@@ -1000,7 +1000,7 @@ var publicMethods = {
 		if(_showOrHideTimeout) {
 			clearTimeout(_showOrHideTimeout);
 		}
-		
+		console.log('test0r1')
 		template.setAttribute('aria-hidden', 'true');
 		template.className = _initalClassName;
 
