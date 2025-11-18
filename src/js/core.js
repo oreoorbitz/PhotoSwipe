@@ -703,7 +703,6 @@ var publicMethods = {
 			clearTimeout(_showOrHideTimeout);
 		}
 		console.log('test0r')
-		template.setAttribute('aria-hidden', 'true');
 		template.className = _initalClassName;
 
 		if(_updateSizeInterval) {
