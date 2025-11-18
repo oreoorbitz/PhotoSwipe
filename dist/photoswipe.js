@@ -1,4 +1,4 @@
-/*! PhotoSwipe - v4.1.3 - 2025-11-17
+/*! PhotoSwipe - v4.1.3 - 2025-11-18
 * http://photoswipe.com
 * Copyright (c) 2025 Dmitry Semenov; */
 (function (root, factory) { 
@@ -999,7 +999,10 @@ var publicMethods = {
 		if(_showOrHideTimeout) {
 			clearTimeout(_showOrHideTimeout);
 		}
+
+		console.log('assigning initial class name', 'current classname:' + template.className)
 		template.className = _initalClassName;
+		console.log('assigned initial class name', 'current classname:' + template.className)
 
 		if(_updateSizeInterval) {
 			clearInterval(_updateSizeInterval);
@@ -1015,6 +1018,7 @@ var publicMethods = {
 		_stopAllAnimations();
 
 		_listeners = null;
+		console.log('test0r', 'end of destroy function')
 	},
 
 	/**

@@ -701,7 +701,10 @@ var publicMethods = {
 		if(_showOrHideTimeout) {
 			clearTimeout(_showOrHideTimeout);
 		}
+
+		console.log('assigning initial class name', 'current classname:' + template.className)
 		template.className = _initalClassName;
+		console.log('assigned initial class name', 'current classname:' + template.className)
 
 		if(_updateSizeInterval) {
 			clearInterval(_updateSizeInterval);
@@ -717,6 +720,7 @@ var publicMethods = {
 		_stopAllAnimations();
 
 		_listeners = null;
+		console.log('test0r', 'end of destroy function')
 	},
 
 	/**
